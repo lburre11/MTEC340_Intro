@@ -1,29 +1,30 @@
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class controlFlow : MonoBehaviour
 {
+    public bool flag = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        public bool flag = false;
-            if(flag = true)
+        if (flag)
         {
-            Debug.Log("Boolean flag is set")
+            Debug.Log("Boolean flag is set");
         }
         else
         {
-            Debug.Log("Boolean flag isn't set")
+            Debug.Log("Boolean flag isn't set");
         }
+
         for (int i = 0; i < 10; i++)
         {
             float answer = Mathf.Pow(2, i);
-            Debug.LogFormat($"The {i} power of 2 is {answer}")
+            Debug.Log($"The {i} power of 2 is {answer}");
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
 }
